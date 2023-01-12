@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME PAGE</title>
+    <script>
+     
+        function logout(){
+            localStorage.removeItem("userData")
+            alert("logout is succed !")
+        }
+    </script>
+    <style>
+        #navbar {
+            display: flex;
+            height: 70px;
+            margin: auto;
+            padding: 0;
+            width: 100%;
+            box-shadow: 2px 5px 20px;
+            position: fixed;
+            background-color: white;
+            top: 0;
+        }
+    
+        #logo{
+            margin-left: auto;
+            height: 10px;
+            float: left;
+            width: 50px;
+        }
+        #logo >img{
+            height: 50px;
+            width: 35px;
+            float: left;
+            padding-left: 5px;
+            margin-left: auto;
+        }
+        #panel{
+            width: 150px;
+            float: left;
+            height: 700px;
+            margin-left: 5px;
+        }
+        #panel >ul{
+           float: left;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+        }
+        #panel ul li{
+            list-style: none;
+            margin-left: 15px;
+        }
+        #profile{
+            width: 250px;
+            float: left;
+            margin-left: 420px;
+        }
+        .search{
+            width: 150px;
+            height: 100px;
+            background: transparent;
+            margin-top: 5px ;
+            font: 15px;
+            float: left;
+            padding: 10px;
+        }
+        #icon{
+            width: 300px;
+            margin-left: 20px;
+            padding: 0;
+        }
+        #icon >ul { 
+            float: left;
+           display: flex;
+           
+        }
+        #icon> ul> li{
+            list-style: none;
+            margin-left: 7px;
+
+        }
+        #gallery {
+            margin-top: 80px;
+            width: 100%;
+            height: 400px;
+            overflow: hidden;
+            box-shadow: 3px 10px 14px;
+        }
+
+        #gallery img {
+            width: 100%;
+            height: 500px;
+            
+        }
+        .photo{
+            display: flex;
+        }
+        .photo > a > img{
+            width: 100%;
+        }
+        .footer{
+            display: flex;
+            justify-content: left;
+            font-size: 15px;
+            margin-top: 40px;
+        }
+        #foot1{
+            list-style: none;
+        }
+        #foot2{
+            list-style: none;
+        }
+        #foot3{
+            margin-left:  49px;
+        }
+        #foot3> a > img{
+            width: 100px;
+            height: 30px;
+        }
+
+
+       
+        
+    </style>
+</head>
+<body>
+
+    <div id="navbar">
+        <div id="logo"> <img src="https://upload.wikimedia.org/wikipedia/commons/b/bc/Myntra_Logo.png" alt="logo">
+        </div>
+        <div id= "panel" >
+            <ul>
+            <li><a href="#">MEN</a></li>
+            <li><a href="#">WOMEN</a></li>
+            <li><a href="#">KIDS</a></li>
+            <li><a href="#">HOME&LIVING</a></li>
+            <li><a href="#">BEAUTY</a></li>
+            <li><a href="#">STUDIO<sup style="color: rgb(211, 32, 142);">NEW</sup></a></li>
+            </ul>
+        </div>
+        <div id="profile">
+        <div class="search">
+            <i class="fa-solid fa-magnifying-glass" style="color: black;"></i>
+            <input type="text" placeholder="search for products..">
+        </div>     
+    </div>
+    <div id="icon">
+        <ul>
+       <li><a href="#">Profile<i class="fa-regular fa-user"></i></a></li>
+       <li><a href="#">Wishlist<i class="fa-regular fa-heart"></i></a></li>
+        <li><a href="#">Bag<i class="fa-solid fa-bag-shopping"></i></a></li>
+        </ul>
+    </div>
+    </div>
+            <!-- navbar ends -->
+
+    <!-- body start -->
+    <div id="gallery">
+        <img src="https://assets.myntassets.com/w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2022/7/28/6107d28b-2bcb-44e6-9743-655b54550b8f1659020199598-Workwear_Desk--1-.jpg" srcset="">" />
+    </div>
+
+    <div>
+        <h1  style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"> DEAL OF THE DAY </h1>
+    </div>
+
+    <div class="photo">
+       <a href="#"><img 
+        src="https://assets.myntassets.com/w_122,c_limit,fl_progressive,dpr_2.0/assets/images/2022/8/17/49939a83-5bf1-4c78-b55d-40d7545f843e1660744474034-Kurtas--4-.jpg">
+       </a>
+       <a href="#"><img
+        src="https://assets.myntassets.com/w_122,c_limit,fl_progressive,dpr_2.0/assets/images/2022/8/17/0e56c483-33e8-4ea5-bae0-96020b7b31401660744930158-Dinnerware---Kitchenware.jpg"
+        alt="">
+        </a>
+        <a href="#"><img
+         src="https://assets.myntassets.com/w_122,c_limit,fl_progressive,dpr_2.0/assets/images/2022/8/17/d5f885c5-4a54-4634-81da-6333aa51c1a11660744537981-Dresses--13-.jpg"
+        alt="">
+        </a>
+        <a href="#"><img
+        src="https://assets.myntassets.com/w_122,c_limit,fl_progressive,dpr_2.0/assets/images/2022/8/17/ca8aa842-a6ed-4c53-b85a-5d7551a650121660744817501-Work-Ready-Shoes--1-.jpg"
+        alt="">
+        </a>
+        <a href="#"><img
+        src="https://assets.myntassets.com/w_122,c_limit,fl_progressive,dpr_2.0/assets/images/2022/8/17/948bd0a5-5b50-4b1e-93cc-234a9be8cfe11660744976622-Accessories--2-.jpg"
+        alt="">
+        </a>
+        <a href="#"><img
+        src="https://assets.myntassets.com/w_122,c_limit,fl_progressive,dpr_2.0/assets/images/2022/8/17/9e19d40a-6720-4d62-92e0-32cd1ee6bee91660744897243-Flats---Heels--3-.jpg"
+        alt ="">
+        </a>
+        </div>
+        </div>
+        </div>
+        
+
+        <div>
+        <h1 style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"> BEST OF MYNTRA EXCLUSIVE BRANDS
+        </h1>
+    </div>
+    <div class="photo">
+    <a href="#"><img
+            src="https://assets.myntassets.com/w_122,c_limit,fl_progressive,dpr_2.0/assets/images/2022/2/9/046147d1-1874-4c10-adb9-6dbd88b606e71644407437923-Kurtas-_Anouk-_Sangria_-_more.jpg"
+            alt=""></a>
+    <a href="#"><img
+            src="https://assets.myntassets.com/w_122,c_limit,fl_progressive,dpr_2.0/assets/images/2022/2/9/76acf345-fc62-4b49-8b2c-9c0fc9c925311644407437977-Tops_-_Dressberry-_AAY_-_more.jpg"
+            alt=""></a>
+    <a href="#"><img
+            src="https://assets.myntassets.com/w_122,c_limit,fl_progressive,dpr_2.0/assets/images/2022/2/9/3923c0c1-2260-4f0e-9598-15b6f9d7731c1644407437960-Roadster_and_H-N_Shirts.jpg"
+            alt=""></a>
+    <a href="#"><img
+            src="https://assets.myntassets.com/w_122,c_limit,fl_progressive,dpr_2.0/assets/images/2022/2/9/eb70855e-98c4-412d-bf20-50804546d57e1644407437883-Dresses_-_Dressberry-_Chemistry_-_more.jpg"
+            alt=""></a>
+    <a href="#"><img
+            src="https://assets.myntassets.com/w_122,c_limit,fl_progressive,dpr_2.0/assets/images/2022/2/9/f9621136-0f00-44d5-aa06-b727a6c8f7c51644407437944-M-H_and_Wrogn_Shirts.jpg"
+            alt=""></a>
+    <a href=""><img 
+             src="https://assets.myntassets.com/w_122,c_limit,fl_progressive,dpr_2.0/assets/images/2022/2/9/931b0b8f-c14d-4ec7-b923-cf512de991731644407437891-HOP_and_Anouk_Kurtas_-_sets.jpg" 
+             alt=""></a>   
+             
+ <div>
+    </div>
+    </div>
+
+    <div>
+     <h1 style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"> TOP PICKS</h1>
+</div>
+</div>
+
+    <div class="photo">
+    <a href="#"><img src="https://assets.myntassets.com/w_140,c_limit,fl_progressive,dpr_2.0/assets/images/2022/2/23/062cea23-9a6a-44b9-bdd4-87cae6a462311645602543339-Kurta-sets.jpg"
+         alt=""></a>
+    <a href="#"><img src="https://assets.myntassets.com/w_140,c_limit,fl_progressive,dpr_2.0/assets/images/2022/2/23/8d65d400-decd-4f42-902c-a40350a16ed11645602543346-Kurtas.jpg" 
+         alt=""></a>
+    <a href="#"><img src="https://assets.myntassets.com/w_140,c_limit,fl_progressive,dpr_2.0/assets/images/2022/2/23/398ee53b-5899-4a9a-9d0b-b35d60c01cb41645602543325-Dresses.jpg" 
+        alt=""></a>
+    <a href="#"><img src="https://assets.myntassets.com/w_140,c_limit,fl_progressive,dpr_2.0/assets/images/2022/2/23/398ee53b-5899-4a9a-9d0b-b35d60c01cb41645602543325-Dresses.jpg"
+         alt=""></a>
+    <a href="#"><img src="https://assets.myntassets.com/w_140,c_limit,fl_progressive,dpr_2.0/assets/images/2022/2/23/2f410d81-7fae-400e-9ecc-b4a8b6df72b91645602543430-Women-Jeans.jpg"
+         alt=""></a>
+    <a href="#"><img src="https://assets.myntassets.com/w_140,c_limit,fl_progressive,dpr_2.0/assets/images/2022/2/23/82a9be01-3032-4725-9500-bcc94366b7931645602543399-Mens-Shirts.jpg"
+         alt=""></a>
+         </div>
+     </div>
+     <footer>
+        <div class="footer">
+            <div>
+                <ul id="foot1">
+                    <li>
+                        <h5>ONLINE SHOPPING</h5>
+                    </li>
+                    <li>Men</li>
+                    <li>Women</li>
+                    <li>Kids</li>
+                    <li>Home&Living</li>
+                    <li>BEAUTY</li>
+                    <li>Gift Cards</li>
+                    <li>Myntra Insider</li>
+                </ul>
+            </div>
+
+            <div>
+                <ul id="foot2">
+                    <li>
+                        <h5>CUSTOMER POLICIES</h5>
+                    </li>
+                    <li>Contact Us</li>
+                    <li>FAQ</li>
+                    <li>T&C</li>
+                    <li>Terms Of Use</li>
+                    <li>Track Orders</li>
+                    <li>Shipping</li>
+                    <li>Cancellation</li>
+                    <li>Returns</li>
+                    <li>Privacy policy</li>
+                    <li>Grievance officer</li>
+                </ul>
+            </div>
+            <div id="foot3">
+                <span><h5><b>EXPERIENCE MYNTRA APP ON MOBILE</b></h5></span> <br>
+                <a href="https://play.google.com/store/apps/details?id=com.myntra.android&pli=1"><img
+                        src="https://constant.myntassets.com/web/assets/img/80cc455a-92d2-4b5c-a038-7da0d92af33f1539674178924-google_play.png"
+                        alt=""></a>
+                <a href="https://apps.apple.com/in/app/myntra-indias-fashion-store/id907394059"><img
+                        src="https://constant.myntassets.com/web/assets/img/bc5e11ad-0250-420a-ac71-115a57ca35d51539674178941-apple_store.png"
+                        alt=""></a><br>
+                <span>keep in touch</span>        
+            </div>
+
+        </div>
+        <div style="text-align: center;">
+            <span>
+                <em> **100% ORIGINAL guarantee for all products at myntra.com</em>
+            </span>
+            <span>
+                <em>Return within 30days of receiving your order **</em>
+                </span>
+        </div>
+        </div>
+        <div></div>
+        <div></div>
+    </footer>
+  
+ <div>
+    <button><a href="./cart.html">Cart</a></button>
+    <button onclick="logout()">Logout</button>
+    </div>
+   <div>
+    <h1>Home Page</h1>
+    <button><a href="./products.html">Products</a></button>
+   </div>
+
+    <script src="./serve.js"></script>
+</body>
+</html>

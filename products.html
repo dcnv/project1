@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products page</title>
+    <style>
+        #screen> div:nth-child(2){
+            border: 1px solid red;
+            display: flex;
+            flex-direction: row;
+        }
+        #leftNavbar{
+            width: 20%;
+            border: 1px solid purple;
+        }
+        #rightProducts{
+            width: 79%;
+            border: 1px solid green;
+            display: flex;
+            flex-direction: column; 
+        }
+        #rightProducts > div{
+            width: 100%;
+            display: flex;
+            border: 1px solid pink;
+            height: 270px;
+
+        }
+        #rightProducts > div > div {
+             width: 18%;
+             margin: auto;
+             border: 1px solid red;
+             height: 250px;
+        }
+        #rightProducts > div > div > img{
+             width: 100%;
+             margin: auto;
+             height: 180px;
+        }
+        #rightProducts > div > div > div{
+             width: 85%;
+             margin: auto;
+             height: 60px;
+        }    
+        #rightProducts > div > div >div > p{
+           font-size: 10px;
+           margin-bottom: 2px;
+           margin-top: 0;
+        }
+        #rightProducts > div > div >div > button{
+            width: 100px;
+            height: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="navbar">
+        <button><a href="./cart.html">Cart</a></button>
+    </div>
+    <h1>Products</h1>
+    <div id="screen">
+        <div>
+            <p>Home/Footwear/Mfb Brand</p>
+            <p>Mfb Brand-2367 items</p>
+            </div>
+            <div>
+                <div id="leftNavbar">
+                    <b>FILTERS</b>
+                    <ul>
+                    <li>MEN</li>
+                    <li>WOMEN</li>
+                    <li>GIRLS</li>
+                    <li>BOYS</li>
+                    </ul>
+                    <B>CATEGORIES</B>
+                    <UL>
+                        <li>Tshirts</li>
+                        <li>shirts</li>
+                        <li>Jeans</li>
+                        <li>Sweatshirts</li>
+                        <li>Jackets</li>
+                        <li>Trackpants</li>
+                        <li>Casual shoes</li>
+                    </UL>
+                    <b>BRANDS</b>
+                    <UL>
+                        <li>Roadster</li>
+                        <li>Invictus</li>
+                        <li>Mask & Harbour</li>
+                        <li>HRX By Hritik</li>
+                        <li>Wrogun</li>
+                        <li>Anouk</li>
+                    </UL>
+                </div>
+            
+                <div id="rightProducts">
+                <div>
+                    <div id="lineOneOne">
+                        <img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/17354140/2022/3/23/735f95ee-4900-46eb-a374-b055713c54fb1648024912628-Killer-Men-White-Solid-Sneakers-5871648024912379-1.jpg" alt="shoes">
+                        <div>
+                            <p>Roadster</p>
+                            <p>Mens Sneakers</p>
+                            <p>Rs. 800</p>
+                            <button onclick="addtocart(lineOneOne)">Add To Cart</button>
+                        </div>
+                    </div>
+                    <div id="lineOneTwo">
+                        <img  src="https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/17425548/2022/9/8/77ef6940-a1a1-40af-bf58-e92bc349b8d11662633779415RoadsterMenBlackSneakers1.jpg" alt="shoes">
+                        <div>
+                            <p>Roadster</p>
+                            <p>Mens Sneakers</p>
+                            <p>Rs.1200</p>
+                            <button onclick="addtocart(lineOneTwo)" >Add To Cart</button>
+                        </div>
+                    </div>
+                    <div id="lineOneThree">
+                        <img src="https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/20154842/2022/11/14/4bdaf6d7-809b-443c-8736-db5e97530b701668423550304-HRX-by-Hrithik-Roshan-Men-Blue-Woven-Design-Sneakers-3531668-1.jpg" alt="shoes">
+                        <div>
+                            <p>HRX By Hritik Roshan</p>
+                            <p>Mens woven design Sneakers</p>
+                            <p>Rs. 2800</p>
+                            <button onclick="addtocart(lineOneThree)" >Add To Cart</button>
+                        </div>
+                    </div>
+                    <div id = "lineOneFour">
+                        <img  src="https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/11752834/2022/4/25/ad749a37-5563-426a-8595-17e97a1e3f131650883720089MastHarbourMenWhiteSneakers1.jpg"  alt="shoes">
+                        <div>
+                            <p>Mast & Harbours</p>
+                            <p>Mens colorblocked Sneakers</p>
+                            <p>Rs. 3450</p>
+                            <button onclick="addtocart(lineOneFour)">Add To Cart</button>
+                        </div>
+                    </div>
+                    <div id="lineOneFive">
+                        <img src="https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/17333752/2022/2/28/1b9a9e4a-3eaf-43e6-b6ef-b255ae87c8461646053483586RoadsterMenBlueTexturedSneakers1.jpg" alt="shoes">
+                        <div>
+                            <p>Roadster</p>
+                            <p>Mens textured Sneakers</p>
+                            <p>Rs. 1230</p>
+                            <button onclick="addtocart(lineOneFive)">Add To Cart</button>
+                        </div></div>
+                </div>
+                <div>
+                    <div>1</div>
+                    <div>1</div>
+                    <div>1</div>
+                    <div>1</div>
+                    <div>1</div>
+                </div>
+                <div>
+                    <div>1</div>
+                    <div>1</div>
+                    <div>1</div>
+                    <div>1</div>
+                    <div>1</div>
+                </div>
+                <div>
+                    <div>1</div>
+                    <div>1</div>
+                    <div>1</div>
+                    <div>1</div>
+                    <div>1</div>
+                </div>
+                <div>
+                    <div>1</div>
+                    <div>1</div>
+                    <div>1</div>
+                    <div>1</div>
+                    <div>1</div>
+                </div>
+                <div>
+                    <div>1</div>
+                    <div>1</div>
+                    <div>1</div>
+                    <div>1</div>
+                    <div>1</div>
+                </div>
+
+                </div>
+            </div>
+    </div>
+    <script src="./serve.js"></script>
+</body>
+</html>
